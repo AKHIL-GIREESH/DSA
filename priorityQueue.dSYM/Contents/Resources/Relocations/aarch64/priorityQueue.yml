@@ -1,0 +1,15 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/akhilgireesh/Programming/DSA/priorityQueue'
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _PQenqueue, symObjAddr: 0x0, symBinAddr: 0x10000389C, symSize: 0x188 }
+  - { offsetInCU: 0x4D, offset: 0x4D, size: 0x8, addend: 0x0, symName: _q, symBinAddr: 0x100008054, symSize: 0x0 }
+  - { offsetInCU: 0x7B, offset: 0x7B, size: 0x8, addend: 0x0, symName: _rear, symBinAddr: 0x100008694, symSize: 0x0 }
+  - { offsetInCU: 0x9C, offset: 0x9C, size: 0x8, addend: 0x0, symName: _front, symBinAddr: 0x100008000, symSize: 0x0 }
+  - { offsetInCU: 0xB1, offset: 0xB1, size: 0x8, addend: 0x0, symName: _priority, symBinAddr: 0x100008050, symSize: 0x0 }
+  - { offsetInCU: 0xC6, offset: 0xC6, size: 0x8, addend: 0x0, symName: _size, symBinAddr: 0x1000086E4, symSize: 0x0 }
+  - { offsetInCU: 0xCF, offset: 0xCF, size: 0x8, addend: 0x0, symName: _PQenqueue, symObjAddr: 0x0, symBinAddr: 0x10000389C, symSize: 0x188 }
+  - { offsetInCU: 0x101, offset: 0x101, size: 0x8, addend: 0x0, symName: _PQdequeue, symObjAddr: 0x188, symBinAddr: 0x100003A24, symSize: 0x1AC }
+  - { offsetInCU: 0x133, offset: 0x133, size: 0x8, addend: 0x0, symName: _display, symObjAddr: 0x334, symBinAddr: 0x100003BD0, symSize: 0xE8 }
+  - { offsetInCU: 0x181, offset: 0x181, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x41C, symBinAddr: 0x100003CB8, symSize: 0x1E8 }
+...
