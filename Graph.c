@@ -19,11 +19,11 @@ void GraphRepresentation(){
 	 	GraphArray[i] = NULL;
 	 }
 	 
-	 for(int i=0;i<size;i++){
+	 for(int i=1;i<size;i++){
 	    struct node *ptr = GraphArray[i];
 	 	printf("Input the no.of subelements = ");
 	 	scanf("%d",&subsize);
-	 	for(int j=0;j<subsize;j++){
+	 	for(int j=1;j<subsize;j++){
 	 	    
 	 	    
 	 	    struct node *p = (struct node *)malloc(sizeof(struct node));
