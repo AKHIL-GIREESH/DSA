@@ -1,6 +1,10 @@
-const fib = (n) => {
-    if(n<=1)return n;
-    return fib(n-1)+fib(n-2)
+const fib = (e1,e2,n) => {
+    if(n==1){
+        console.log(e1);
+        return;
+    }
+    //console.log(e1)
+    fib(e2,e1+e2,n-1)
 }
 
-console.log(fib(7))
+fib(0,1,5)
