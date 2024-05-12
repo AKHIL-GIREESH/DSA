@@ -23,6 +23,10 @@ int main()
         cout << *(i) << "\n";
     }
 
+    // Erase
+    v.erase(v.begin());
+    // v.erase(v.begin() + 2, v.begin() + 4); {10,20,12,23,35} --> {10,20,35}
+
     // Cout
     cout << "Hello World" << p.first << v[0] << v2[0];
     return 0;
