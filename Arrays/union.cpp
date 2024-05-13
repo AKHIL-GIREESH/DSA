@@ -8,7 +8,7 @@ int main()
     vector<int> v2 = {2, 3, 3, 5, 6, 7};
     vector<int> v3;
 
-    int iter1 = 0, iter2 = 0, iter3 = 0;
+    int iter1 = 0, iter2 = 0;
 
     while (iter1 < v1.size() && iter2 < v2.size())
     {
