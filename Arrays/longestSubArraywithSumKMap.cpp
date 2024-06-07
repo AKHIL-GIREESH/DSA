@@ -6,8 +6,8 @@ using namespace std;
 int main()
 {
     vector<int> v1 = {1, 2, 3, 1, 1, 1, 1, 4, 2, 3};
-    vector<int> v = {2, 0, 0, 0, 3};
-    map<int, int> m;
+    vector<int> v = {7, 0, 0, 0, 3};
+    unordered_map<int, int> m;
     int preSum = 0, l = 0, k = 3, rem;
     for (int i = 0; i < v.size(); i++)
     {
