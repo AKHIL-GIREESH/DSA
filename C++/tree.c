@@ -140,29 +140,36 @@ void main() {
     
     */
    
-    while (1) {
-    	 blink1 = 'x';
-    	 blink2 = '~';
-    	 r1ball = '@';
-        printTree(star1);
-        r1ball = ' ';
-        r2ball = '@';
-        usleep(300000); 
-        printTree(star2);
-        r2ball = ' ';
-        r3ball = '@';
-        blink1 = '~';
-        blink2 = 'x';
-        usleep(300000); 
-        printTree(star1);
-        r3ball = ' ';
-        r4ball = '@';
-        usleep(300000); 
-        printTree(star2);
-        r4ball = ' ';
-        usleep(300000); 
-        
-    }
+   
+while (1) {
+    system("clear");
+    blink1 = 'x';
+    blink2 = '~';
+    r1ball = '@';
+    printf("\033[H\033[J"); // Clear terminal
+    printTree(star1);
+    r1ball = ' ';
+    r2ball = '@';
+    usleep(300000);
     
+    printf("\033[H\033[J"); // Clear terminal
+    printTree(star2);
+    r2ball = ' ';
+    r3ball = '@';
+    blink1 = '~';
+    blink2 = 'x';
+    usleep(300000); 
     
+    printf("\033[H\033[J"); // Clear terminal
+    printTree(star1);
+    r3ball = ' ';
+    r4ball = '@';
+    usleep(300000); 
+    printTree(star2);
+    r4ball = ' ';
+    usleep(300000);
+
+    printf("\033[H\033[J"); // Clear terminal
 }
+}
+
