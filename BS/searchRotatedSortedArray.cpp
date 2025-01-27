@@ -4,8 +4,8 @@ using namespace std;
 
 int main(){
   
-  vector<int> v = {4,4,4,1,2,2,3,3,3,4};
-  int low = 0, high = v.size()-1, mid, target=1;
+  vector<int> v = {4,5,6,7,0,1,2};
+  int low = 0, high = v.size()-1, mid, target=0;
 
   while(low<=high){
     mid = (low+high)/2;
@@ -32,7 +32,7 @@ int main(){
       }
     }
   }
-}
+
 
   return 0;
 }
