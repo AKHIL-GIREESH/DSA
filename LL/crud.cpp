@@ -48,6 +48,18 @@ void insertAtEnd(){
   cout << "\n";
 }
 
+void insertSomewhere(){
+  Node *p = new Node(12);
+  Node *ptr = head;
+
+  for(int i=1;i<=(2-1);i++){
+    ptr = ptr->next;
+  }
+
+
+}
+
+
 int main(){
   Node *p = new Node(10);
   cout << p->next;
