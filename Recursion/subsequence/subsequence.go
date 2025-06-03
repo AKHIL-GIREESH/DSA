@@ -1,8 +1,8 @@
-package recursion
+package main
 
 import "fmt"
 
-var nums = []int{1, 2, 3}
+var Nums = []int{1, 2, 3}
 
 func GenerateSubsequences(result []int, index int, limit int) {
 	if index >= limit {
@@ -10,7 +10,7 @@ func GenerateSubsequences(result []int, index int, limit int) {
 		return
 	}
 
-	result = append(result, nums[index])
+	result = append(result, Nums[index])
 	index++
 
 	GenerateSubsequences(result, index, limit)
@@ -20,5 +20,8 @@ func GenerateSubsequences(result []int, index int, limit int) {
 
 func main() {
 	empty := make([]int, 0)
-	GenerateSubsequences(empty, 0, len(nums))
+	// 	GenerateSubsequences(empty, 0, len(nums))
+	// 	AnySubsequence(empty, 0, len(nums), 0, 2)
+	fmt.Println(CountSubsequences(empty, 0, len(Nums)))
+
 }
