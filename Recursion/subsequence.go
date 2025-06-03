@@ -1,8 +1,7 @@
-package main
+package recursion
 
 import "fmt"
 
-// Declare global variable correctly
 var nums = []int{1, 2, 3}
 
 func GenerateSubsequences(result []int, index int, limit int) {
