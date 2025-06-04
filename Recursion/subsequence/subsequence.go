@@ -22,6 +22,6 @@ func main() {
 	empty := make([]int, 0)
 	// 	GenerateSubsequences(empty, 0, len(nums))
 	// 	AnySubsequence(empty, 0, len(nums), 0, 2)
-	fmt.Println(CountSubsequences(empty, 0, len(Nums)))
-
+	// fmt.Println(CountSubsequences(empty, 0, len(Nums)))
+	CombinationSum(empty, 7, 0)
 }
