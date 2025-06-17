@@ -20,8 +20,14 @@ func GenerateSubsequences(result []int, index int, limit int) {
 
 func main() {
 	empty := make([]int, 0)
+	m := map[int]bool{
+		1: false,
+		2: false,
+		3: false,
+	}
 	// 	GenerateSubsequences(empty, 0, len(nums))
 	// 	AnySubsequence(empty, 0, len(nums), 0, 2)
-	// fmt.Println(CountSubsequences(empty, 0, len(Nums)))
-	CombinationSum2(empty, 0, 3)
+	//fmt.Println(CountSubsequences(empty, 0, len(Nums)))
+	//CombinationSum2(empty, 0, 3)
+	Permutation(m, empty, len(m))
 }
