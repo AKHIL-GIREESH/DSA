@@ -1,5 +1,10 @@
 L = input().split()
 
+for i in L:
+    if i not in "UD":
+        print("Invalid Input")
+        exit()
+
 s = 0
 
 for i in L:
