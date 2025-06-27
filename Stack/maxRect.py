@@ -1,7 +1,6 @@
 from collections import deque
 
 L = [3,2,10,11,5,10,6,3]
-
 stack = deque()
 maxRecArea = 0
 
@@ -21,4 +20,3 @@ while(stack):
     maxRecArea = max(maxRecArea,tempArea)
 
 print(maxRecArea)
-
