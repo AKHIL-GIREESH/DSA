@@ -11,7 +11,6 @@ def width(node):
 
     queue.append([node,0])
     w = 0
-    #print(queue.popleft())
 
     while(queue):
         queueLen = len(queue)
@@ -29,9 +28,9 @@ def width(node):
                 queue.append([l,2*i])
             if r:
                 queue.append([r,2*i+1])
-                
 
-    print(w)
+
+    return w 
 
 root = Node('A')
 root.left = Node('B')
@@ -39,6 +38,6 @@ root.right = Node('C')
 root.left.left = Node('D')
 root.right.right = Node('E')
 
-width(root)
+print(width(root))
 
 
