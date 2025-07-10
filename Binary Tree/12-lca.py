@@ -27,8 +27,9 @@ def LCA(root,x,y):
 
 root = Node(10)
 root.left = Node(20)
-root.right = Node(20)
-root.left.left = Node(30)
-root.right.right = Node(30)
+root.right = Node(30)
+root.left.left = Node(40)
+root.right.right = Node(50)
+root.right.left = Node(45)
 
-print(LCA(root,20,30))
+print(LCA(root,45,50))
