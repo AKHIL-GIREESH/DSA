@@ -33,20 +33,32 @@ class LL:
         temp.next = None
 
     def insert_anywhere(self,pos,data):
+        if pos == 0:
+            self.insert_at_beginning(data)
+            return
         temp = self.head
         for i in range(pos-1):
             temp = temp.next
         temp1 = temp.next
+        if not temp1:
+            self.insert_at_back(data)
+            return
         n = Node(data)
         temp.next = n
         n.next = temp1
 
 
     def delete_anywhere(self,pos):
+        if pos == 0:
+            self.remove_from_front()
+            return
         temp = self.head
         for i in range(pos-1):
             temp = temp.next
         temp1 = temp.next
+        if not temp1:
+            self.remove_from_end()    
+            return
         temp.next = temp.next.next
         temp1.next = None
 
@@ -64,8 +76,8 @@ ll.insert_at_beginning(10)
 ll.insert_at_back(15)
 ll.insert_at_beginning(5)
 ll.remove_from_front()
-ll.insert_anywhere(1,20)
-ll.delete_anywhere(1)
+ll.insert_anywhere(2,20)
+ll.delete_anywhere(2)
 ll.printLL()
 
     
