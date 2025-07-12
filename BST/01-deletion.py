@@ -1,0 +1,2 @@
+def deletion(node):
+    pass
