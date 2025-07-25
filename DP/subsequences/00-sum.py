@@ -36,5 +36,25 @@ def tabulation():
             dp[i][j] = notpick or pick
     return dp[len(L)-1][target]
 
+def spaceOptimized():
+    prev = [False]*(target+1)
+    prev[0] = True
+    if L[0] <= target:
+        prev[L[0]] = True
+
+    for i in range(1,len(L)):
+        curr = [False]*(target+1)
+        curr[0] = True
+        for j in range(1,target+1):
+            notPick = prev[j]
+            pick = False
+            if j >= L[i]:
+                pick = prev[j-L[i]]
+            
+            curr[j] = pick or notPick
+        prev = curr
+    return prev[target]
+
+
 print(memo(len(L) - 1, target, dp))
-print(dp)
+print(spaceOptimized())
