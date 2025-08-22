@@ -22,15 +22,17 @@ for u,v,wt in edges:
 q = [(0,0)]
 distance = [float('inf')]*V
 distance[0] = 0
-visited = [False]*V
+
 
 while q:
     node,wt = heapq.heappop(q)
-    visited[node] = True
+
+    if wt > distance[node]:
+        continue
+
     if graph.get(node):
         for i,dis in graph[node]:
-            distance[i] = min(distance[i], distance[node]+dis)
-            if not visited[i]:
-                q.append((i,distance[i]))
+            if distance[i] > distance[node]+dis:
+                distance[i] = min(distance[i], distance[node]+dis)
+                heapq.heappush(q,(distance[i],i))
 print(distance)
-    #distance[] = 
