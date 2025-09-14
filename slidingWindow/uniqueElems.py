@@ -13,9 +13,9 @@ for i in range(k):
 ans.append(len(d))
 
 for i in range(k,len(arr)):
-    d[arr[i-1]] -= 1
-    if d[arr[i-1]] == 0:
-        del d[arr[i-1]]
+    d[arr[i-k]] -= 1
+    if d[arr[i-k]] == 0:
+        del d[arr[i-k]]
     
     if not d.get(arr[i]):
         d[arr[i]] = 1
