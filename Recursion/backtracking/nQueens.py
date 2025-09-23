@@ -1,4 +1,4 @@
-N = 8
+N = 4 
 m = [[0 for i in range(N)] for j in range(N)]
 
 LL = [0 for i in range(((N-1)*2)+1)]
