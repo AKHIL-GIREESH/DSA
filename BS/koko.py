@@ -32,6 +32,8 @@ while b!=0:
     a,b=b,a%b
 print(a)
 
+print(k)
+
 
 
 # bm=1<<(k-1)
