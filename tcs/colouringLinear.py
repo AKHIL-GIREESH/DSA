@@ -10,7 +10,6 @@ for i in range(q):
     c = int(c)
     ans[ind] = c
 
-    print(ans)
     if ind-1 >= 0 and ans[ind-1] == ans[ind]:
         count+=1
     if ind+1 <= l and ans[ind+1] == ans[ind]: 
