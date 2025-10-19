@@ -45,11 +45,24 @@ def tabulationFrog():
     return ans[len(L)-1]
         
 
-
-    return
+def spaceOptimised():
+    prev = 0
+    prev2 = 0
+    for i in range(1,len(L)):
+        l = prev + abs(L[i] - L[i-1])
+        r = float("inf")
+        if i>1:
+            r = prev2 + abs(L[i] - L[i-2])
+        
+        prev2 = prev
+        prev = min(l,r)
+    
+    return prev
+    
 
 print(recursiveFrog(len(L)-1))
 print(dpFrog(len(L)-1))
 print(tabulationFrog())
+print(spaceOptimised())
 
 
